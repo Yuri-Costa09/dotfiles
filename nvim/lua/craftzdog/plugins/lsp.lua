@@ -51,4 +51,5 @@ vim.lsp.enable({
 	"rust_analyzer",
 	"gopls",
 	"clojure_lsp",
+	"metals", -- installed via coursier, not Mason (see after/lsp/metals.lua)
 })
