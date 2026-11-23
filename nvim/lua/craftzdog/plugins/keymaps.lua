@@ -117,6 +117,13 @@ map({
 	{ ";r", Snacks.picker.grep, desc = "Live grep" },
 	{ ";;", Snacks.picker.resume, desc = "Resume picker" },
 	{
+		"<leader>e",
+		function()
+			Snacks.explorer()
+		end,
+		desc = "File tree (Snacks explorer)",
+	},
+	{
 		"\\\\",
 		function()
 			Snacks.picker.buffers({
