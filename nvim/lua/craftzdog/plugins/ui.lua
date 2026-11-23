@@ -174,6 +174,9 @@ require("codediff").setup({
 	},
 })
 
+-- Diagnostics / symbols / todo / quickfix panel (keymaps under <leader>x)
+require("trouble").setup()
+
 vim.diagnostic.config({
 	underline = true,
 	update_in_insert = false,

@@ -270,3 +270,12 @@ map({
 	{ "<leader>dh", "<cmd>CodeDiff history %<cr>", desc = "File history (current file)" },
 	{ "<leader>dH", "<cmd>CodeDiff history<cr>", desc = "File history (repo)" },
 })
+
+-- Trouble
+map({
+	{ "<leader>xx", "<cmd>Trouble diagnostics toggle<cr>", desc = "Diagnostics (Trouble)" },
+	{ "<leader>xX", "<cmd>Trouble diagnostics toggle filter.buf=0<cr>", desc = "Buffer diagnostics (Trouble)" },
+	{ "<leader>xs", "<cmd>Trouble symbols toggle focus=false<cr>", desc = "Symbols (Trouble)" },
+	{ "<leader>xt", "<cmd>Trouble todo toggle<cr>", desc = "Todo comments (Trouble)" },
+	{ "<leader>xq", "<cmd>Trouble qflist toggle<cr>", desc = "Quickfix list (Trouble)" },
+})
