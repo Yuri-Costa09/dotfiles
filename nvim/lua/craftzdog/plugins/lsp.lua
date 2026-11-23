@@ -20,6 +20,9 @@ require("mason-tool-installer").setup({
 		-- enabled below, so install them here to avoid "failed to spawn" errors.
 		"css-lsp",
 		"glsl_analyzer",
+		-- Go and Clojure (carried over from the previous config)
+		"gopls",
+		"clojure-lsp",
 	},
 	auto_update = false,
 	run_on_start = true,
@@ -46,4 +49,6 @@ vim.lsp.enable({
 	"tailwindcss",
 	"glsl_analyzer",
 	"rust_analyzer",
+	"gopls",
+	"clojure_lsp",
 })
