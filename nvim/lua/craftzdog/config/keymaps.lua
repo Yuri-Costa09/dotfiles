@@ -47,8 +47,10 @@ keymap.set("n", "sl", "<C-w>l")
 
 -- Toggle inlay hints
 keymap.set("n", "<leader>i", function()
-	-- require("craftzdog.lsp").toggleInlayHints()
-end)
+	local enabled = not vim.lsp.inlay_hint.is_enabled()
+	vim.lsp.inlay_hint.enable(enabled)
+	vim.notify("Inlay hints " .. (enabled and "enabled" or "disabled"))
+end, { desc = "Toggle inlay hints" })
 
 -- Yank current file path
 keymap.set("n", "<leader>yf", function()
